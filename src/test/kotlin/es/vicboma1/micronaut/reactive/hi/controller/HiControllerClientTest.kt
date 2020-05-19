@@ -1,6 +1,6 @@
-package es.vicboma1.micronaut
+package es.vicboma1.micronaut.reactive
 
-import es.vicboma1.micronaut.hi.client.HiClient
+import es.vicboma1.micronaut.reactive.hi.client.HiClient
 import io.micronaut.test.annotation.MicronautTest
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Assertions.assertEquals

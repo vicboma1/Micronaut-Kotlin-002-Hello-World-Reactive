@@ -1,7 +1,7 @@
-package es.vicboma1.micronaut.hi.controller
+package es.vicboma1.micronaut.reactive.hi.controller
 
-import es.vicboma1.micronaut.hi.model.HiModel
-import es.vicboma1.micronaut.hi.service.HiService
+import es.vicboma1.micronaut.reactive.hi.model.HiModel
+import es.vicboma1.micronaut.reactive.hi.service.HiService
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
 import javax.validation.constraints.NotBlank

@@ -1,6 +1,6 @@
-package es.vicboma1.micronaut.hi.service
+package es.vicboma1.micronaut.reactive.hi.service
 
-import es.vicboma1.micronaut.hi.model.HiModel
+import es.vicboma1.micronaut.reactive.hi.model.HiModel
 import io.reactivex.Single
 import javax.inject.Singleton
 

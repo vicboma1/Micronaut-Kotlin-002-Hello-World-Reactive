@@ -1,6 +1,6 @@
-package es.vicboma1.micronaut.hi.controller
+package es.vicboma1.micronaut.reactive.hi.controller
 
-import es.vicboma1.micronaut.hi.model.HiModel
+import es.vicboma1.micronaut.reactive.hi.model.HiModel
 import io.micronaut.http.annotation.Get
 import io.micronaut.validation.Validated
 import io.reactivex.Single

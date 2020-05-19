@@ -1,7 +1,7 @@
-package es.vicboma1.micronaut.hi.client
+package es.vicboma1.micronaut.reactive.hi.client
 
-import es.vicboma1.micronaut.hi.controller.IHiController
-import es.vicboma1.micronaut.hi.model.HiModel
+import es.vicboma1.micronaut.reactive.hi.controller.IHiController
+import es.vicboma1.micronaut.reactive.hi.model.HiModel
 import io.micronaut.http.annotation.Get
 import io.micronaut.http.client.annotation.Client
 import io.reactivex.Single

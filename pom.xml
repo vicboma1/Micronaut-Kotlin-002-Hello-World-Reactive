@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>es.vicboma1.micronaut</groupId>
-  <artifactId>es.vicboma1.micronaut</artifactId>
+  <groupId>es.vicboma1.micronaut.reactive</groupId>
+  <artifactId>es.vicboma1.micronaut.reactive</artifactId>
   <version>0.1</version>
   <properties>
-    <es.vicboma1.micronaut.micronaut.version>1.2.0</es.vicboma1.micronaut.micronaut.version>
+    <es.vicboma1.micronaut.reactive.micronaut.version>1.2.0</es.vicboma1.micronaut.reactive.micronaut.version>
     <jdk.version>1.8</jdk.version>
     <maven.compiler.target>${jdk.version}</maven.compiler.target>
     <maven.compiler.source>${jdk.version}</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <exec.mainClass>es.vicboma1.micronaut.Application</exec.mainClass>
+    <exec.mainClass>es.vicboma1.micronaut.reactive.Application</exec.mainClass>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
     <kotlinVersion>1.3.21</kotlinVersion>
@@ -24,9 +24,9 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>io.es.vicboma1.micronaut.micronaut</groupId>
-        <artifactId>es.vicboma1.micronaut.micronaut-bom</artifactId>
-        <version>${es.vicboma1.micronaut.micronaut.version}</version>
+        <groupId>io.es.vicboma1.micronaut.reactive.micronaut</groupId>
+        <artifactId>es.vicboma1.micronaut.reactive.micronaut-bom</artifactId>
+        <version>${es.vicboma1.micronaut.reactive.micronaut.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -46,18 +46,18 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>io.es.vicboma1.micronaut.micronaut</groupId>
-      <artifactId>es.vicboma1.micronaut.micronaut-runtime</artifactId>
+      <groupId>io.es.vicboma1.micronaut.reactive.micronaut</groupId>
+      <artifactId>es.vicboma1.micronaut.reactive.micronaut-runtime</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>io.es.vicboma1.micronaut.micronaut</groupId>
-      <artifactId>es.vicboma1.micronaut.micronaut-http-server-netty</artifactId>
+      <groupId>io.es.vicboma1.micronaut.reactive.micronaut</groupId>
+      <artifactId>es.vicboma1.micronaut.reactive.micronaut-http-server-netty</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>io.es.vicboma1.micronaut.micronaut</groupId>
-      <artifactId>es.vicboma1.micronaut.micronaut-http-client</artifactId>
+      <groupId>io.es.vicboma1.micronaut.reactive.micronaut</groupId>
+      <artifactId>es.vicboma1.micronaut.reactive.micronaut-http-client</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -88,8 +88,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.es.vicboma1.micronaut.micronaut.test</groupId>
-      <artifactId>es.vicboma1.micronaut.micronaut-test-junit5</artifactId>
+      <groupId>io.es.vicboma1.micronaut.reactive.micronaut.test</groupId>
+      <artifactId>es.vicboma1.micronaut.reactive.micronaut-test-junit5</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -141,7 +141,7 @@
             <plugin>all-open</plugin>
           </compilerPlugins>
           <pluginOptions>
-            <option>all-open:annotation=io.es.vicboma1.micronaut.micronaut.aop.Around</option>
+            <option>all-open:annotation=io.es.vicboma1.micronaut.reactive.micronaut.aop.Around</option>
           </pluginOptions>
         </configuration>
         <executions>
@@ -156,18 +156,18 @@
               </sourceDirs>
               <annotationProcessorPaths>
                   <annotationProcessorPath>
-                    <groupId>io.es.vicboma1.micronaut.micronaut</groupId>
-                    <artifactId>es.vicboma1.micronaut.micronaut-inject-java</artifactId>
-                    <version>${es.vicboma1.micronaut.micronaut.version}</version>
+                    <groupId>io.es.vicboma1.micronaut.reactive.micronaut</groupId>
+                    <artifactId>es.vicboma1.micronaut.reactive.micronaut-inject-java</artifactId>
+                    <version>${es.vicboma1.micronaut.reactive.micronaut.version}</version>
                   </annotationProcessorPath>
                   <annotationProcessorPath>
-                    <groupId>io.es.vicboma1.micronaut.micronaut</groupId>
-                    <artifactId>es.vicboma1.micronaut.micronaut-validation</artifactId>
-                    <version>${es.vicboma1.micronaut.micronaut.version}</version>
+                    <groupId>io.es.vicboma1.micronaut.reactive.micronaut</groupId>
+                    <artifactId>es.vicboma1.micronaut.reactive.micronaut-validation</artifactId>
+                    <version>${es.vicboma1.micronaut.reactive.micronaut.version}</version>
                   </annotationProcessorPath>
                   <annotationProcessorPath>
-                    <groupId>io.es.vicboma1.micronaut.micronaut.configuration</groupId>
-                    <artifactId>es.vicboma1.micronaut.micronaut-openapi</artifactId>
+                    <groupId>io.es.vicboma1.micronaut.reactive.micronaut.configuration</groupId>
+                    <artifactId>es.vicboma1.micronaut.reactive.micronaut-openapi</artifactId>
                     <version>1.1.1</version>
                   </annotationProcessorPath>                     
               </annotationProcessorPaths>
@@ -196,14 +196,14 @@
               </sourceDirs>
               <annotationProcessorPaths>
                   <annotationProcessorPath>
-                    <groupId>io.es.vicboma1.micronaut.micronaut</groupId>
-                    <artifactId>es.vicboma1.micronaut.micronaut-inject-java</artifactId>
-                    <version>${es.vicboma1.micronaut.micronaut.version}</version>
+                    <groupId>io.es.vicboma1.micronaut.reactive.micronaut</groupId>
+                    <artifactId>es.vicboma1.micronaut.reactive.micronaut-inject-java</artifactId>
+                    <version>${es.vicboma1.micronaut.reactive.micronaut.version}</version>
                   </annotationProcessorPath>
                   <annotationProcessorPath>
-                    <groupId>io.es.vicboma1.micronaut.micronaut</groupId>
-                    <artifactId>es.vicboma1.micronaut.micronaut-validation</artifactId>
-                    <version>${es.vicboma1.micronaut.micronaut.version}</version>
+                    <groupId>io.es.vicboma1.micronaut.reactive.micronaut</groupId>
+                    <artifactId>es.vicboma1.micronaut.reactive.micronaut-validation</artifactId>
+                    <version>${es.vicboma1.micronaut.reactive.micronaut.version}</version>
                   </annotationProcessorPath>
               </annotationProcessorPaths>
             </configuration>

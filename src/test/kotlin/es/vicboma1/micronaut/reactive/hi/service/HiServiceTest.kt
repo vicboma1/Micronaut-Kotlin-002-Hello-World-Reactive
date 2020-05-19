@@ -1,6 +1,6 @@
-package es.vicboma1.micronaut
+package es.vicboma1.micronaut.reactive
 
-import es.vicboma1.micronaut.hi.service.HiService
+import es.vicboma1.micronaut.reactive.hi.service.HiService
 import io.micronaut.test.annotation.MicronautTest
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*

@@ -9,7 +9,7 @@ plugins {
 
 
 version "0.1"
-group "es.vicboma1.micronaut"
+group "es.vicboma1.micronaut.reactive"
 
 repositories {
     mavenCentral()
@@ -48,7 +48,7 @@ dependencies {
 
 test.classpath += configurations.developmentOnly
 
-mainClassName = "es.vicboma1.micronaut.Application"
+mainClassName = "es.vicboma1.micronaut.reactive.Application"
 
 test {
     useJUnitPlatform()

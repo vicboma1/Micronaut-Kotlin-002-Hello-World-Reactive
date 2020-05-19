@@ -1,4 +1,4 @@
-package es.vicboma1.micronaut
+package es.vicboma1.micronaut.reactive
 
 import io.micronaut.context.ApplicationContext.run
 import io.micronaut.http.client.HttpClient
