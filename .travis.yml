@@ -20,4 +20,5 @@ install:
   - true
 
 script:
+  - gradle test
   - gradlew build --scan -s
