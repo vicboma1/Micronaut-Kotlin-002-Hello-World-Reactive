@@ -1,4 +1,5 @@
 language: java
+install: true
 sudo: true
 dist: trusty
 os: linux
@@ -15,9 +16,10 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
     
-install:
-  - true
-
+before_install:
+  - chmod +x gradlew
+  - chmod +x gradle/wrapper/gradle-wrapper.jar
+  
 script:
-  - ./gradlew test
   - ./gradlew build --scan -s
+  - ./gradlew test build
