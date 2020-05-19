@@ -6,7 +6,7 @@
 <br>
 <br>
 <p align="center">
-    <img src="https://github.com/vicboma1/Micronaut-Kotlin-002-Hello-World-Reactive/raw/master/assets/test.png" >	
+    <img src="https://github.com/vicboma1/Micronaut-Kotlin-002-Hello-World-Reactive/raw/master/assets/test-reactive.png" >	
 </p>
 <br>
 <br>
