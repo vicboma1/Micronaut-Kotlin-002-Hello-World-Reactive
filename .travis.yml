@@ -1,5 +1,5 @@
 language: java
-sudo: false
+sudo: true
 dist: trusty
 os: linux
 
@@ -16,5 +16,8 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
     
+install:
+  - true
+
 script:
   - ./gradlew build --scan -s
