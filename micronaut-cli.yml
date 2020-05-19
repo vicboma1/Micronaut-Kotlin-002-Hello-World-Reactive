@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: es.vicboma1.micronaut
+---
+testFramework: spek
+sourceLanguage: kotlin
